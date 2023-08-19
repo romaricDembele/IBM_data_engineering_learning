@@ -4,7 +4,7 @@ from datetime import timedelta
 from airflow.utils.dates import days_ago
 
 arguments = {
-    'owner': 'Romaric Dembélé',
+    'owner': 'Romaric DEMBELE',
     'start_date': days_ago(0),
     "email": ["romadembele@gmail.com"],
     "email_on_failure": False,
