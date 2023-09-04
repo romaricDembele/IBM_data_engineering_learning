@@ -1,0 +1,22 @@
+Submitting a DAG is as simple as copying the DAG python file into dags folder in the AIRFLOW_HOME directory.
+
+Step 2.3. Open a terminal and run the command below to submit the DAG that was created in the previous exercise.
+
+1
+cp dummy_dag.py $AIRFLOW_HOME/dags
+Copied!
+Step 2.4. Verify that our DAG actually got submitted.
+
+Run the command below to list out all the existing DAGs.
+
+1
+airflow dags list
+Copied!
+Verify that dummy_dag is a part of the output.
+
+Step 2.5. Run the command below to list out all the tasks in dummy_dag.
+
+1
+airflow tasks list dummy_dag
+Copied!
+You should see 3 tasks in the output.
